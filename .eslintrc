@@ -24,5 +24,11 @@
 		"no-inner-declarations": 1,
 		"no-loop-func": 1,
 		"space-before-function-paren": [2, "never"] 
-	}
+	},
+	"parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+		"ecmaFeatures": { "modules": true }
+	},
+	
 }

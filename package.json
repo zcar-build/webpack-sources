@@ -5,7 +5,7 @@
   "main": "./lib/index.js",
   "scripts": {
     "pretest": "npm run lint && npm run beautify-lint",
-    "test": "mocha --full-trace --check-leaks",
+    "test": "mocha --full-trace --harmony --check-leaks",
     "travis": "npm run cover -- --report lcovonly",
     "lint": "eslint lib test",
     "beautify-lint": "beautify-lint lib/**.js test/**.js",
@@ -15,8 +15,10 @@
     "publish-patch": "npm test && npm version patch && git push && git push --tags && npm publish"
   },
   "dependencies": {
-    "source-map": "~0.5.3",
-    "source-list-map": "~0.1.0"
+    "eslint": "^3.10.2",
+    "mocha": "^3.1.2",
+    "source-list-map": "~0.1.0",
+    "source-map": "~0.5.3"
   },
   "devDependencies": {
     "beautify-lint": "^1.0.3",
